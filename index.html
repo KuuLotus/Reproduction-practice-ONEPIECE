@@ -59,7 +59,9 @@
               <li class="menu-item"><a href="#">GALLERY</a></li>
               <li class="menu-item"><a href="#">THEATERS</a></li>
               <li class="menu-item"><a href="#">MEDIA</a></li>
-              <li class="menu-item icon"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+              <li class="menu-item icon">
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              </li>
             </ul>
           </nav>
         </div>
@@ -67,9 +69,46 @@
     </header>
 
     <main>
-      <div id="sidebar"></div>
-      <div id="main-content"></div>
+      <!-- サイドバー -->
+      <div id="sidebar">
+        <div class="youtube-area">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/YAN45KAL5lg"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="spotify-area">
+          <iframe
+            style="border-radius: 12px"
+            src="https://open.spotify.com/embed/playlist/37i9dQZF1DWV2mRphxMWjR?utm_source=generator"
+            width="100%"
+            height="380"
+            frameborder="0"
+            allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          ></iframe>
+        </div>
+      </div>
+      <!-- メイン -->
+      <div id="main-content">
+        <img src="./img/main.jpg" alt="" />
+        <div class="img-catch">
+          <img src="./img/catch.png" alt="" />
+        </div>
+        <div class="img-title">
+          <img src="./img/main-title.png" alt="" />
+        </div>
+        <div class="img-text">
+          <img src="./img/main-text.png" alt="" />
+        </div>
+      </div>
     </main>
+    <div class="a"></div>
     <script src="script.js"></script>
   </body>
 </html>
