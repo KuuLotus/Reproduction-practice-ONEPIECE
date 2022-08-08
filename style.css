@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+li {
+  list-style: none;
+}
+
+/* ===== header ===== */
+header {
+  background: url("./img/bg_red.png");
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+.header-container {
+  padding: 0 1rem;
+}
+
+.top-head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-logo {
+  width: 118px;
+}
+
+.header-logo a {
+  display: block;
+}
+
+.header-logo a:hover {
+  opacity: 0.7;
+}
+
+.header-logo img {
+  height: 100%;
+}
+
+.header-sns {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-sns,
+.nav-language {
+  display: flex;
+  align-items: center;
+}
+
+.nav-sns li,
+.nav-language .notActive {
+  padding: 2px 12px;
+  background: #000;
+  clip-path: polygon(10% 0, 100% 0%, 90% 100%, 0% 100%);
+  transition: all 0.2s;
+}
+
+.nav-sns li:hover,
+.nav-language .notActive:hover {
+  background: #808080;
+}
+
+.nav-language .active {
+  padding: 5px 15px;
+  background: #fff;
+  clip-path: polygon(10% 0, 100% 0%, 90% 100%, 0% 100%);
+}
+
+.nav-language .notActive {
+  padding: 5px 15px;
+}
+
+.nav-sns i {
+  font-size: 1.1em;
+  color: #fff;
+}
+
+.title-en {
+  font-size: 0.8em;
+  color: #fff;
+  margin-right: 10px;
+  margin-left: 20px;
+  font-weight: 400;
+}
+
+.nav-language a {
+  font-size: 0.8em;
+  color: #fff;
+}
+
+.nav-language .active {
+  font-size: 0.8em;
+  color: #000;
+}
+
+.nav-menu {
+  display: flex;
+  margin-top: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-menu,
+.menu-item {
+  padding: 0.06em 0.5em;
+  transition: all 0.2s;
+}
+
+.nav-menu .menu-item:hover {
+  background: #fff;
+  clip-path: polygon(10px 0, 100% 0%, calc(100% -10px) 100%, 0% 100%);
+}
+
+.nav-menu .menu-item:last-child:hover {
+  background: none;
+}
+
+.menu-item a {
+  font-size: 1.2em;
+}
+
+.nav-menu .icon a {
+  font-size: 1.5em;
+}
+
+.nav-menu .icon a:hover {
+  color: #00acee;
+}
+
+/* ===== main ===== */
+main {
+  min-height: 100vh;
+  display: flex;
+}
+
+#sidebar {
+  background: blue;
+  flex: 1;
+}
+
+#main-content {
+  background: green;
+  flex: 3;
+}
