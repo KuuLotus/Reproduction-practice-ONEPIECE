@@ -211,8 +211,34 @@ main {
   height: 100%;
 }
 
-.a {
-  height: 400px;
-  background: green;
+/* ===== バナー ===== */
+#banner {
+  background: #222;
+}
+
+.ticket-area {
+  display: flex;
+  justify-content: center;
+  padding: 4em 0 2em;
+  gap: 10px;
+}
+
+.banner-rectangle {
+  width: 210px;
+  height: auto;
+  background: red;
+  transition: all .3s;
+}
+
+.banner-rectangle:hover {
+  opacity: .8;
+}
+
+.info-area {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 10px 4em;
 }
 
