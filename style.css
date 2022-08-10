@@ -287,7 +287,6 @@ main {
 .btn-area {
   text-align: center;
   margin-top: 1.5rem;
-
 }
 
 .btn-area a {
@@ -302,4 +301,16 @@ main {
 
 .btn-area a:hover {
   background: red;
+}
+
+/* ===== footer ===== */
+footer {
+  background: #222;
+  padding: 4rem 0;
+}
+
+.billing-roadshow {
+  width: 50%;
+  padding-top: 2rem;
+  margin: 0 auto;
 }
