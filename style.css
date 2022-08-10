@@ -227,11 +227,11 @@ main {
   width: 210px;
   height: auto;
   background: red;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 .banner-rectangle:hover {
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .info-area {
@@ -242,3 +242,64 @@ main {
   padding: 0 10px 4em;
 }
 
+/* ===== NEWS ===== */
+#news {
+  background: #fff;
+  padding: 4rem 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.w-container {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.news-title {
+  text-align: center;
+  font-size: 2.2em;
+  color: red;
+}
+
+#news .wrap {
+  display: flex;
+  padding: 1.5rem 0;
+  border-top: 1px solid #e0c39b;
+  letter-spacing: 2px;
+  transition: all 0.3s;
+}
+
+#news .last-wrap {
+  border-bottom: 1px solid #e0c39b;
+}
+
+#news .wrap:hover {
+  color: red;
+}
+
+#news dt {
+  width: 120px;
+  font-weight: 700;
+  color: red;
+  letter-spacing: normal !important;
+}
+
+.btn-area {
+  text-align: center;
+  margin-top: 1.5rem;
+
+}
+
+.btn-area a {
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 2px 25px;
+  background: #000;
+  clip-path: polygon(10% 0, 100% 0%, 90% 100%, 0% 100%);
+  transition: all 0.2s;
+  font-weight: 700;
+}
+
+.btn-area a:hover {
+  background: red;
+}
