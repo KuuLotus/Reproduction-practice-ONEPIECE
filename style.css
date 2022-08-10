@@ -19,7 +19,7 @@ li {
 }
 
 /* ===== header ===== */
-header {
+#bg-red-header {
   background: url("./img/bg_red.png");
   font-family: "Poppins", sans-serif;
   font-weight: 700;
@@ -142,6 +142,49 @@ header {
 }
 
 .nav-menu .icon a:hover {
+  color: #00acee;
+}
+
+/* ===== 固定ヘッダー ===== */
+#bg-black-header {
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  position: fixed;
+  top: -100px;
+  transition: all 0.8s;
+  z-index: 1000;
+  font-family: "Poppins", sans-serif;
+}
+
+#bg-black-header.is-show {
+  top: 0;
+}
+
+#bg-black-header .header-logo img {
+  height: 46px;
+}
+
+#bg-black-header .nav-menu {
+  margin: auto 0;
+  height: 100%;
+  align-items: center;
+}
+
+#bg-black-header .menu-item:hover {
+  background: none;
+}
+
+#bg-black-header .menu-item a {
+  color: #fff;
+  font-weight: 700;
+  transition: all 0.3s;
+}
+
+#bg-black-header .menu-item a:hover {
+  color: red;
+}
+
+#bg-black-header .nav-menu .icon a:hover {
   color: #00acee;
 }
 
